@@ -12,11 +12,11 @@ app.use(express.static("public"));
 //   1. String of the URL
 //   2. Callback function
 app.get("/", (request, response, next) => {
-  response.sendfile(__dirname + "/views/home-page.html");
+  response.sendFile(__dirname + "/views/home-page.html");
 });
 
 app.get("/cat", (request, response, next) => {
-  response.sendfile(__dirname + "/views/cat-page.html");
+  response.sendFile(__dirname + "/views/cat-page.html");
 });
 
 console.log("DIRNAME " + __dirname);
